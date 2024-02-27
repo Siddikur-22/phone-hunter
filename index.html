@@ -15,12 +15,21 @@
     </header>
     <main class="container mx-auto p-32 ">
         <section class="bg-gray-100 p-4 m-4  ">
-            <input id="search-field" type="text" placeholder="Search here...." class="input input-bordered w-full max-w-xs" />
+            <input id="search-field" type="text" placeholder="Search here...."
+                class="input input-bordered w-full max-w-xs" />
             <button onclick=" handleSearch()" class="btn btn-accent text-white">Search</button>
+            <!-- another search button -->
+            <input id="search-field2" type="text" placeholder="Search here...."
+                class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch2()" class="btn btn-primary">Search</button>
         </section>
         <!-- search result  -->
         <section>
             <div id="phone-container" class="grid gird-cols-1 md:gird-cols-2 lg:grid-cols-3 mb-5 gap-2">
+            </div>
+            <!-- show all button -->
+            <div id="show-all-container" class="hidden">
+                <button class="btn btn-accent text-white">Show ALL</button>
             </div>
         </section>
     </main>
